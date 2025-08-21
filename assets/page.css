@@ -90,12 +90,17 @@ header nav a{
     cursor: pointer;
 }
 
+.contacto h2{
+    text-align: center;
+    margin-bottom: 15px;
+   
+}
 button:hover{
     background: #222222;
 }
 
 footer{
-    text-align: center;
+    text-align: flex;
     padding: 10px;
     background-color: #333;
     color: #fff;
