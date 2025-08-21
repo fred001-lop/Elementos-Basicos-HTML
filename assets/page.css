@@ -40,3 +40,63 @@ header nav a{
     border-radius: 10px;
 }
 
+.foto-perfil{
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.proyectos-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyectos{
+    background: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 20px);
+}
+
+
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+
+}
+
+.contacto input, .contacto textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+.contacto button{
+    width: 50%;
+    background: #333;
+    color: #fff;
+    border: none;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #222222;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
