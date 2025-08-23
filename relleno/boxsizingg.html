@@ -1,0 +1,62 @@
+<!-- Box Sizing
+
+
+En CSS, box-sizing es una propiedad que determina cómo se calcula el ancho y alto total de un elemento. Por defecto, las propiedades width y height solo incluyen el tamaño del contenido y no tienen en cuenta el relleno (padding), los bordes (borders) o los márgenes (margins). Sin embargo, al usar la propiedad box-sizing, puedes cambiar este comportamiento y hacer que las propiedades width y height incluyan también los tamaños del relleno y del borde. Esto puede simplificar los cálculos de diseño y prevenir problemas de tamaño inesperados.
+
+Aquí está la sintaxis básica para usar la propiedad box-sizing:
+
+selector {
+    box-sizing: value;
+}
+value: El comportamiento de box-sizing deseado, que puede ser uno de los siguientes:
+
+content-box: Este es el valor por defecto. Las propiedades width y height solo incluyen el tamaño del contenido. El relleno, los bordes y los márgenes se añaden fuera del ancho y alto especificados.
+border-box: Las propiedades width y height incluyen el contenido, el relleno y los tamaños del borde. Los márgenes aún se añaden fuera del elemento.
+Por ejemplo:
+
+div {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+En este ejemplo, el elemento <div> tiene un valor box-sizing de content-box. Esto significa que el ancho real renderizado del <div> será 300px (contenido) + 40px (relleno izquierdo y derecho) + 10px (borde izquierdo y derecho) = 350px. La altura se calculará de manera similar.
+
+Por otro lado, el elemento con la clase container tiene un valor box-sizing de border-box. En este caso, el width especificado de 400px incluirá el contenido, el relleno y el borde. El área de contenido real se reducirá para acomodar el relleno y el borde, resultando en un ancho de contenido de 400px - 60px (relleno izquierdo y derecho) - 20px (borde izquierdo y derecho) = 320px. La altura se calculará de manera similar. -->
+
+
+<html>
+<head>
+    <title>Box Sizing</title>
+    <style>
+        /* Escribe las reglas CSS aquí */
+        .content-box-div{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid blue;
+            box-sizing: content-box;
+        }
+        .border-box-div{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 5px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box-div">This is a div with content-box.</div>
+    <div class="border-box-div">This is a div with border-box.</div>
+</body>
+</html>
