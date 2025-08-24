@@ -1,16 +1,16 @@
-body{
-    background-color: #f0ffff;
+body {
+    background-color: #e6f0fa;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-.login{
-    background-color: #f5f5dc;
+.login {
+    background-color: #ffffff;
     padding: 10%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ff5;
+    box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+    border: 2px solid #cce0f5;
     text-align: center;
 }
