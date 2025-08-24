@@ -23,3 +23,13 @@ input{
     margin: 6px;
     box-sizing: border-box;
 }
+
+button{
+    width: 100%;
+    background-color: #cce0fd;
+    color: #000;
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
