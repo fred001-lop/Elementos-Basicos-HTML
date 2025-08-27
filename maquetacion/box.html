@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Relative Positioning</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+        /* Escriba las reglas CSS aquí */
+        .box2{
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>
+</body>
+</html>
