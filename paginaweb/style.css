@@ -38,10 +38,31 @@ img{
     float: right;
     margin: 0 10px;
 }
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 30vh;
-    
 }
+
+@media (max-width: 400px){
+    .menu{
+        padding: 10px;
+
+    }
+    img{
+        float: none;
+        width: 80vw;
+    }
+    .contact{
+        height: auto;
+        
+    }
+}
+
+
+
+
+
+
+
