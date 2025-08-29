@@ -52,3 +52,41 @@ h2 {
   border: none;
   border-radius: 6px;
 }
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #fff5cc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 160px;
+    top: 100%;
+    left: 0;
+    border: 1px solid #ffcc66;
+    border-radius: 6px;
+
+}
+
+.submenu li{
+    padding: 10px;
+}
+.has-submenu:hover .submenu{
+    display: block;
+}
+
+.info-section >p:first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intro~p{
+    padding: 20px;
+}
+
+.menu-list > li:nth-child(odd) li{
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0.1);
+
+}
+
