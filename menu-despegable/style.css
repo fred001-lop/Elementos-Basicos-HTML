@@ -87,5 +87,13 @@ h2 {
 li:nth-child(odd) li{
     color: rgb(204, 61, 61)
 
+}
 
+.search:focus{
+  border: 1px solid #cc7a00;
 
+}
+
+.cta-button:active{
+  background-color: rgb(100, 61, 3);
+}
