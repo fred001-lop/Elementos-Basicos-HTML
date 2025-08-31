@@ -75,7 +75,7 @@ h2 {
     display: block;
 }
 
-.info-section >p:first-child{
+.info-section p:first-child{
     font-size: 20px;
     font-weight: 700;
 }
@@ -84,9 +84,8 @@ h2 {
     padding: 20px;
 }
 
-.menu-list > li:nth-child(odd) li{
-    text-decoration: underline;
-    background-color: rgba(0,0,0,0.1);
+li:nth-child(odd) li{
+    color: rgb(204, 61, 61)
 
-}
+
 
