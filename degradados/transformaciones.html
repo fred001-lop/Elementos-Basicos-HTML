@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en dos filas */
+        gap: 20px; /* Espacio entre las imágenes */
+        justify-content: center; /* Centra las imágenes */
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 200px;
+        height: 260px;
+    }
+    
+    /* Escribe tu regla CSS aquí */
+    .img1:hover{
+        transform: scale(1.2);
+
+    }
+    .img2:hover{
+        transform: rotate(45deg);
+    }
+
+    .img3:hover{
+        transform: translate(-5px, -3px);
+    }
+    
+    .img4:hover{
+        transform: skew(20deg, 10deg);
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Filters Gallery Challenge</h1>
+
+    <div class="gallery">
+        <div class="img1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/German_shepherd_dog_colt.jpg" alt="Blurred Image">
+        </div>
+        <div class="img2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Dog%2C_Helgafell%2C_Sn%C3%A6fellsnes_peninsula%2C_Iceland%2C_20230505_1507_5224.jpg" alt="Brightened Image">
+        </div>
+        <div class="img3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Pyreneean_Mountain_dog_guarding_sheep.jpg" alt="Grayscale Image">
+        </div>
+        <div class="img4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg" alt="Sepia Image">
+        </div>
+    </div>
+</body>
+</html>
