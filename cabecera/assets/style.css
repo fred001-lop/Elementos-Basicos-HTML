@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-color: #15521F;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 40px;
+
+}
+
+.hero p{
+    color: #fff;
+    font-size: 15px;
+}
