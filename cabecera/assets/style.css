@@ -1,6 +1,8 @@
-*{
+body{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:  #80F292;
 }
 .hero{
     background-color: #15521F;
@@ -43,5 +45,15 @@
 }
 
 .section-tittles{
-    
+    font-size: 35px;
+    color: #15521F;
+    line-height: 1px;
+
 }
+.cards{
+    display: flex;
+}
+
+Estiliza la sección .features con algo de relleno y texto centrado.
+Estiliza el .section-title para que destaque — cambia el tamaño de la fuente, el color y añade espacio debajo.
+Usa Flexbox en el contenedor .cards para alinear las tarjetas en una fila. Asegúrate de que se ajusten si es necesario y tengan algo de espacio entre ellas.
