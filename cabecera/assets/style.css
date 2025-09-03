@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:  #80F292;
+    background-color: antiquewhite;
 }
 .hero{
     background-color: #15521F;
@@ -56,6 +56,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 
 }
 .btn{
@@ -67,4 +68,12 @@ body{
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.1s ease;
     text-decoration: none;
+}
+
+.feature{
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 150px;
+
 }
