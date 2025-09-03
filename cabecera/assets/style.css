@@ -27,7 +27,7 @@ body{
 }
 
 .btn:hover{
-    background-color: #F8FF36;
+    background-color: #9ca109;
 }
 
 .btn:active{
@@ -53,7 +53,13 @@ body{
 .cards{
     display: flex;
 }
-
-Estiliza la sección .features con algo de relleno y texto centrado.
-Estiliza el .section-title para que destaque — cambia el tamaño de la fuente, el color y añade espacio debajo.
-Usa Flexbox en el contenedor .cards para alinear las tarjetas en una fila. Asegúrate de que se ajusten si es necesario y tengan algo de espacio entre ellas.
+.btn{
+    background-color: #ff9933;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-decoration: none;
+}
