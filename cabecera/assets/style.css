@@ -31,6 +31,7 @@ body{
 }
 
 .btn:active{
+    transform: scale(0.96);
     color: #000;
     box-sizing: 1px 1px 1px  rgba(0,0,0,0.3);
 }
@@ -40,18 +41,22 @@ body{
 }
 
 .features{
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
+
 }
 
-.section-tittles{
-    font-size: 35px;
-    color: #15521F;
-    line-height: 1px;
+.section-tittle{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
 
 }
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .btn{
     background-color: #ff9933;
