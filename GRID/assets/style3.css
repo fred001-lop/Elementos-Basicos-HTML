@@ -15,6 +15,22 @@ img{
 
 .container{
     display: grid;
-    gap: 20px;
-    
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header header" 
+    "img1 img2 img3";
+}
+
+.header{
+    grid-area: header;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
 }
