@@ -6,7 +6,7 @@ body{
 }
 
 img{
-    width: 100%;
+    width: 60%;
 }
 
 .container{
@@ -32,18 +32,28 @@ img{
 .hero{
     grid-area: hero;
     background-color: #f4f4f4;
-    padding: 75px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .feature{
     grid-area: feature;
-    background-color: #1a1a2e;
+    background-color: #16213e;
     color: #fff;
-    padding: 40px;
+    padding: 15px 20px;
     justify-content: center;
     text-align: center;
+    border-radius: 10px;
+}
 
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: #16213e;
+    color: #fff;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 5px 3px;
 }
 
