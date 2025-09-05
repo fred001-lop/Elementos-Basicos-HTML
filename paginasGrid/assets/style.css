@@ -9,3 +9,24 @@ body{
 img{
     width: 100%;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header header" "hero feature feature";
+    gap: 20px;
+}
+
+.header{
+    grid-area: header;
+}
+
+.hero{
+    grid-area: hero;
+}
+
+.feature{
+    grid-area: feature;
+}
+
