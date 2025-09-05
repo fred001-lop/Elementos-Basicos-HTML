@@ -39,5 +39,11 @@ img{
 
 .feature{
     grid-area: feature;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+
 }
 
