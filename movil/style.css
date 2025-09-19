@@ -1,0 +1,30 @@
+:root{
+    --base-font-size: 16px; 
+}
+
+body{
+    font-size: var(--base-font-size);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Female_polar_bear_%28Ursus_maritimus%29_with_cub%2C_Svalbard.jpg')center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1{
+    margin: 0;
+} 
+
+.subtittle{
+    margin-top: 10px;
+    font-size: 1rem;
+    
+}
