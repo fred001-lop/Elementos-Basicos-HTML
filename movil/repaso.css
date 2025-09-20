@@ -3,6 +3,7 @@
     --heading-font: 'Helvetica', sans-serif;
     --h1-size: 2rem;
     --h2-size: 1.5rem;
+    --body-font-size: 16px;
     --primary-color: #4a90e2;
     --secondary-color: #f0f4f8;
 }
@@ -12,6 +13,7 @@ body{
     margin: 0;
     padding: 20px;
     background-color: var(--secondary-color);
+    font-size: var(--body-font-size);
 }
 
 h1{
@@ -84,6 +86,7 @@ input, textarea, button{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    width: 100%;
 }
 
 button{
@@ -97,7 +100,9 @@ button{
 
     .nav-list{
         gap: 20px;
+        display: flex;
     }
+
 
     .nav-list li{
         margin-bottom: 0;
@@ -107,4 +112,7 @@ button{
         max-width: 500px;
     }
 
+    .menu-button{
+        display: none;
+    }
 }
