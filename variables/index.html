@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Theming in CSS</title>
+  <style>
+    /* Tematización con Variables CSS */
+    :root {
+      --primary-color: #f04;
+      --secondary-color: #fc4a99;        
+      --bg-color: #f0c4f8;
+      --text-color: #333333;
+      --font-family: 'Arial, sans-serif';
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--secondary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mountain Hiking Adventures</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Trails</a>
+      <a href="#">Gear</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Explore the Mountains</h2>
+      <p>Discover breathtaking trails, enjoy nature, and challenge yourself with our curated hiking routes. Whether you're a beginner or an expert, there is a path for everyone. <span class="highlight">Adventure awaits!</span></p>
+      <a href="#" class="button">Learn More</a>
+    </section>
+
+    <section>
+      <h2>Essential Gear</h2>
+      <p>Prepare for your hikes with the right gear. From backpacks to boots, we provide tips on choosing items that will keep you safe and comfortable. <span class="highlight">Stay prepared!</span></p>
+      <a href="#" class="button">Shop Gear</a>
+    </section>
+
+    <section>
+      <h2>Join Our Community</h2>
+      <p>Connect with fellow hikers, share your experiences, and participate in group hikes. Our community is welcoming and supportive for all skill levels. <span class="highlight">Join us today!</span></p>
+      <a href="#" class="button">Sign Up</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Mountain Hiking Adventures. All rights reserved.
+  </footer>
+
+</body>
+</html>
