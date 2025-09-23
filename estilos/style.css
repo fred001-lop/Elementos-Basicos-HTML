@@ -20,3 +20,67 @@ header{
     color: var(--bg-color);
     text-align: center;
 }
+
+main{
+    padding: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card{
+    background-color: #F2E8E6;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2{
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.card button{
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.10s;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+.card button:hover{
+    background-color: #f00;
+}
+
+a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.highlight{
+    color: var(--text-color);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+footer a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
