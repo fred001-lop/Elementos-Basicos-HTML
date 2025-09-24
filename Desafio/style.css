@@ -1,0 +1,85 @@
+:root{
+    --text-color: #333333;
+    --heading-color: #1a3a6d;
+
+    --primary-font: "Georgia", serif;
+    --secondary-font: "Arial, sans-serif";
+
+}
+
+body{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header{
+    background-color: var(--heading-color);
+    padding: 2rem 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--secondary-font);
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    font-family: var(--secondary-font);
+    color: var(--heading-color);
+}
+
+main{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section{
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul li{
+    margin-bottom: 0.6rem;
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+button:hover{
+    background-color: #C17900;
+}
+
+footer{
+    padding: 1rem ;
+    background-color: var(--heading-color);
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+
+    text-decoration: underline;
+    text-decoration-color: #000;
+
+}
