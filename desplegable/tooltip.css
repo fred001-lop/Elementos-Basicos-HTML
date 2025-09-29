@@ -3,8 +3,33 @@ body{
     padding: 20px;
 }
 
-.notification{
-    background-color: #4CAF50;
-    padding: 20px;
+.notification_icon{
+    /* background-color: rgb(68, 189, 57); */
+    border-radius: 8px;
+    /* padding: 5px; */
+    color: #39d416;
+    font-size: 25px;
 }
+
+.notification{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #97757549;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px ;
+    margin-right: 60%;
+    /* border: 1px solid #000; */
+    box-shadow:  4px 8px rgba(0,0,0,0.3);
+    }
+
+.notification_message{
+    margin-left: 10%;
+    color: #000;
+        
+        
+    }
+
+
 
