@@ -1,0 +1,174 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 16px;
+    background-color: rgb(75, 175, 80);
+    color: #fff;    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+.droptown{
+    position: relative;
+    display: inline-block;
+}
+
+.droptown-button{
+    padding: 8px 14px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.droptown-content{
+    position: absolute;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 6px (0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+    min-width: 150px;
+    z-index: 10;
+    display: none;
+}
+
+.droptown-content a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.droptown-content a:hover{
+    background-color: #f2f2f2;
+}
+
+
+/* aca se muestra el contenido de los a */
+.droptown:hover .droptown-content{
+    display: block;
+}
+
+.tabs{
+    margin: 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs label{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabs input{
+    display: none;
+    
+}
+
+.tabs label:hover{
+    background: #ddd;
+}
+
+.tab-content{
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 15px;
+    background: #fff;
+
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2{
+    display: block;
+}
+
+#tab1:checked + label,
+#tab2:checked + label{
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* insignia */
+.icon{
+    position: relative;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.badge{
+    background: #f00;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 4px 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -13px;
+
+}
+
+/* informacion sobre las herramientas  */
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-text{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.tooltip .tooltip-text{
+    visibility: hidden;
+    width: 260px;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-70%);
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+}
+
