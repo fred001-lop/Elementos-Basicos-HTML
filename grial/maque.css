@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* 📱 Por defecto: columnas (pantallas pequeñas) */
+  min-height: 100vh;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Sección izquierda */
+.left {
+  background-color: #00f;
+  color: #fff;
+}
+
+/* Sección derecha */
+.right {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Títulos */
+.left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.right h2 {
+  margin-bottom: 1rem;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #357ab7;
+}
+
+/* 💻 A partir de 768px: se ponen lado a lado */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left,
+        .right{
+          flex: 2;
+        }
+}
+
+@media (min-width: 1200px){
+    .container{
+        flex-direction: row;
+    }
+}
