@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.notification{
+    background-color: #3CAF50;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    min-height: 200px;
+}
+
+.sidebar h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    margin: 6px 0;
+    padding: 5px;
+    border-radius: 4px;
+    color: #00f;
+}
+
+.sidebar a:hover{
+    background-color: #262221;
+    color: #fff;
+}
+
+.droptown{
+    margin-top: 15px;
+}
+
+.droptown-btn{
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #444;
+}
+
+/* .droptown-content{q
+    display: none;
+    margin-top: 5px;
+}
+
+.droptown:hover .droptown-content{
+    display: block;
+}
+
+.droptown-content a{
+    padding-left: 15px;
+    font-size: 24px;
+}
+ */
+
+/* Contenido */
+
+.content{
+    flex: 1;
+    padding: 30px;
+    background: #fff;
+}
+
+.content h1{
+    margin-top: 0;
+}
+
+.content img{
+    width: 35%;
+    height: 45%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.tooltip{
+    position: relative;
+    border-bottom: 1px dotted #333;
+    cursor: help;
+    color: #0077ff;
+}
+
+.tooltip-text{
+    visibility: hidden;
+}
