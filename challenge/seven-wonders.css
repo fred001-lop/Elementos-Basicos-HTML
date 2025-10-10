@@ -19,23 +19,37 @@ body{
     min-height: 200px;
 }
 
+.sidebar{
+    width: 200px;
+    background-color: #8DEB94;
+    /* border-top: 1px solid #000; */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 20px;
+    /* border-right: 1px solid #000; */
+    
+}
+
 .sidebar h2{
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .sidebar a{
     display: block;
     text-decoration: none;
+    text-align: justify;
     margin: 6px 0;
     padding: 5px;
     border-radius: 4px;
-    color: #00f;
+    color: #000;
+    transition: background-color 0.2s ease;
 }
 
 .sidebar a:hover{
     background-color: #262221;
     color: #fff;
+    transform: scale(5px);
 }
 
 .droptown{
@@ -48,22 +62,24 @@ body{
     padding: 5px;
     border-radius: 4px;
     background-color: #444;
+    color: #fff;
+    
 }
 
-/* .droptown-content{q
-    display: none;
+.droptown-content{
+    visibility: hidden;
+    cursor: pointer;
     margin-top: 5px;
 }
 
-.droptown:hover .droptown-content{
-    display: block;
+.droptown-content a{
+    font-size: 14px;
+    padding-left: 5px;
 }
 
-.droptown-content a{
-    padding-left: 15px;
-    font-size: 24px;
+.droptown:hover .droptown-content{
+    visibility: visible;
 }
- */
 
 /* Contenido */
 
@@ -90,7 +106,26 @@ body{
     cursor: help;
     color: #0077ff;
 }
-
+.content p{
+    text-align: justify;
+}
 .tooltip-text{
     visibility: hidden;
+    width: 160px;
+    background-color: #33fbe6;
+    color: #000;
+    text-align: justify;
+    padding: 6px;
+    border-radius: 6px;
+    position: absolute;
+    left: 105%;
+    bottom: -145%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+
+
+.tooltip:hover .tooltip-text{
+    visibility: visible;
 }
