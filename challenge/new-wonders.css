@@ -11,5 +11,15 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    color: var(--text-color);
+}   
 
+header{
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 20px;
 }
